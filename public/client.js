@@ -38,6 +38,8 @@ function calculate(operand1, operand2, operation) {
                 uri += "?operation=power";
                 break;
             }
+            // If the operation is not recognized, set an error
+            
             setError();
             return;
     }
