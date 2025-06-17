@@ -34,6 +34,10 @@ function calculate(operand1, operand2, operation) {
             uri += "?operation=divide";
             break;
         default:
+            if (operation === '^') {
+                uri += "?operation=power";
+                break;
+            }
             setError();
             return;
     }
